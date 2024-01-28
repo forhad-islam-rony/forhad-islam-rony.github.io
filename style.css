@@ -1,0 +1,531 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-image: linear-gradient( 109.6deg,  rgba(5,84,94,1) 16%, #bbb 91.1% );
+
+}
+.homepage{
+    /* background-image: linear-gradient( 112.1deg,  rgba(32,38,57,1) 11.4%, rgba(63,76,119,1) 70.2% );4,228,1) 7.1%, rgba(240,246,238,1) 67.4% ); */
+    /* background-image: linear-gradient( 109.6deg,  rgba(5,84,94,1) 16%, #bbb 91.1% );
+     */
+}
+
+.navbar{
+    /* background-color:red; */
+    height: 14vh;
+    width: 90%;
+    display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+.navbar .navlist{
+     display: flex;
+     gap: 3.25rem;
+}
+.navbar .navlist li{
+    list-style: none;
+}
+.navbar .navlist li a{
+    text-decoration: none;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #333333;
+}
+.navlist li a::after,.navlist .active::after{
+    content: "";
+    position: absolute;
+    background: #4F4F4F;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform .5s;
+}
+.navlist li a:hover::after,.navlist .active::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.navlist li a:hover{
+    color: #034754;
+}
+.navbar .logo{
+    font-size: 2rem;
+    background: -webkit-linear-gradient(left, #5ca8a4, #a9a3c2);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+    
+    
+    
+    
+
+}
+.hamburger{
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger .line{
+    background-color: black;
+    height: .25rem;
+    width: 2.5rem;
+    margin: .3rem;
+    border-radius: 1rem;
+}
+.main{
+    height: calc(100vh - 14vh);
+    width: 95%;
+    margin: auto;
+    display: flex;
+    /* background-color: aqua; */
+    align-items: center;
+}
+.main .left{
+    display: flex;
+    position: relative;
+    /* background-color: yellow; */
+}
+.main .left .icons{
+     display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    color: #ccccd7;
+}
+.icons .fa-brands:hover{
+    cursor: pointer;
+    background: linear-gradient(#ccccd7,#36454F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+ }
+
+.main .middle{
+    /* background-color: green; */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    margin-left: 3.75rem;
+    margin-bottom: 3rem;
+    max-width: 75rem;
+}
+.contents .emoji{
+    font-size: 2rem;
+}
+.middle h1{
+    font-size: 3.125rem;
+}
+.contents h4{
+    font-size: 1.75rem;
+    color: #F8F8FF;
+}
+.contents h5{
+    font-size: 1.25rem;
+    color: #d2d2db;
+}
+.name .s1{
+    display: inline-block;
+    margin-right: 1rem;
+    color: #9e9794; 
+}
+.name .s2{
+    display: inline-block;
+    color: #c2bdba; 
+}
+.intro .s3{
+    display: inline-block;
+    margin-right: 1rem;
+    color: #9e9794;
+}
+.intro .typing{
+    display: inline-block;
+    color: #473b3b;
+}
+.details{
+    max-width: 46.875rem;
+    line-height: 30px;
+    margin-top: 1.25rem;
+    margin-bottom: 3.125rem;
+    color: #d4d4dd;
+}
+.btn{
+    border: 2px solid #ad9f9f;
+    font-size: 1.25rem;
+    padding: 12px 20px;
+    border-radius: 8px;
+    background: transparent;
+    transition: .5s ease;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    color: #938686;
+}
+.btn:hover{
+    background:#817d7d;
+    color: #384348;
+}
+.main .right{
+    aspect-ratio: 1;
+    border-radius: 50%;
+    margin-left: 5.5rem;
+    margin-bottom: 6rem;
+    box-shadow: 0 0px 25px  #044d47;
+    background-color:transparent;
+    width: 23.75rem;
+    background-image: url(profilepic2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: left;
+}
+
+
+/* .........Second Page...........*/
+
+.secondpage{
+   
+    /* background-image: linear-gradient( 109.6deg,  rgb(24, 97, 107) 16%, #c7baba 91.1% ); */
+    
+}
+.secondpage .upper{
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+}
+.upper .left{
+    flex-basis: 35%;
+}
+ .upper .left .img{
+    margin-left: 6rem;
+    border-radius: 5%;
+    bordertransform: translateY(50px),translateX(50px);
+    background-color:transparent;
+    width: 20rem;
+    height: 20rem;
+    background-image: url(profilepic3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: left;
+}
+/* .upper .left .img::before{
+    content: '';
+    position: absolute;
+    width: 180px;
+    height: 140%;
+    background-color:white;
+    box-shadow: 0 0 20px rgb(8, 8,8);
+    animation: animate 4s linear infinite;
+}
+.upper .right .img::after{
+    content: '';
+    position: absolute;
+    inset: 10px;
+    background-color: rgb(4, 75, 97);
+    border-radius: 16px;
+} */
+.upper .right{
+   flex-basis: 60%;
+}
+.section-title{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 2rem;
+}
+.section-title h2{
+    font-size: 40px;
+    font-weight: 700;
+    position: relative;
+    /* color: #46494D; */
+    color: #605858;
+    
+}
+.section-title h2::before{
+    content: '';
+    height: 4px;
+    width: 60px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #4F4F4F;
+}
+.section-title h2::after{
+    content: '';
+    height: 4px;
+    width: 30px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 8px;
+    background-color: #4F4F4F;
+}
+
+.upper .right .about-text p{
+    font-size: 16px;
+    line-height: 25px;
+    color: #5a514d;
+}
+#markable{
+
+    /* background: linear-gradient(120deg, #4da0b0 0%, #8bcbe3 25%, #ffd785 50%, #f58b9b 75%, #9977ae 100%); */
+    /* background: linear-gradient(120deg, #2c3e50 0%, #bdc3c7 25%, #ecf0f1 50%, #e74c3c 75%, #8e44ad 100%); */
+   
+    background: linear-gradient(120deg, #9a8c98 0%, #cba3cc 25%, #fad8e8 50%, #a7e4e5 75%, #acb6e5 100%);
+
+    background-clip: text;
+    color: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         /* ...............Responsiveness ..........*/
+         @media screen and (max-width: 1200px){
+            .contents .details
+            {
+                font-size: 1.5rem;
+            }
+            .contents h4{
+                font-size: 2.2rem;
+            }
+            .contents h5{
+                font-size: 1.5rem;
+            }
+            .contents .emoji{
+                font-size: 2.2rem;
+            }
+            .btn{
+                font-size: 1.5rem;
+            }
+            .navbar .navlist li a{
+                font-size: 1.2rem;
+            }
+            .main .left .icons{
+               font-size: 1.8rem;
+               gap: 3rem;
+           }
+           .navbar .logo{
+            font-size: 2.5rem;
+        }
+        .main .middle{
+            margin-bottom: 1rem;
+        }
+    
+         }
+         @media screen and (max-width: 1020px){
+            .contents .details
+            {
+                font-size: 1rem;
+            }
+            .contents h4{
+                font-size: 1.75rem;
+            }
+            .contents h5{
+                font-size: 1.25rem;
+            }
+            .contents .emoji{
+                font-size: 2rem;
+            }
+            .btn{
+                font-size: 1.25rem;
+            }
+            .navbar .navlist li a{
+                font-size: 1rem;
+            }
+            .main .left .icons{
+               font-size: 1.5rem;
+               gap: 1.875rem;
+           }
+           .navbar .logo{
+            font-size: 2rem;
+        }
+        .main .middle{
+            margin-bottom: 1rem;
+        }
+        .name .s2{
+            font-size: 2.9rem;
+        }
+        .name .s1{
+            font-size: 2.8rem;
+        }
+         
+         
+         }
+         @media screen and (max-width: 900px){
+            .name .s2{
+                font-size: 2.5rem;
+            }
+            .name .s1{
+                font-size: 2.5rem;
+            }
+            .contents h4{
+                font-size: 1.5rem;
+            }
+         
+         }
+         @media screen and (max-width: 768px){
+            .navbar .navlist{
+                position: absolute;
+                flex-direction: column;
+                background-color: green;
+                top: 0;
+                left: -130%;
+                padding: 7rem 8rem;
+                transition: .5s ease-in-out;
+            }
+            .hamburger{
+                display: block;
+            }
+            .main{
+                flex-direction: column-reverse;
+                height: auto;
+            }
+           .main .right{
+                margin-top: 5rem;
+                margin-left: 0rem;
+                margin-bottom: 3rem;
+                width: 22rem;
+            }
+            .contents h4{
+                font-size: 1.5rem;
+                margin-left: 12rem;
+            }
+            .contents h5{
+                font-size: 1.25rem;
+                margin-left: 14rem;
+            }
+            .contents .emoji{
+                font-size: 1.8rem;
+            }
+            .btn{
+                font-size: 1.2rem;
+                margin-left: 3rem;
+            }
+            .main .left .icons{
+                flex-direction: row;
+               font-size: 1.5rem;
+               gap: 2rem;
+               margin-left: 4rem;
+           }
+           .main .left{
+            margin-bottom: 3rem;
+            margin-top: -3rem;
+           }
+       .main .middle{
+            margin-bottom: .5rem;
+        }
+        .name .s2{
+            font-size: 2rem;
+        }
+        .name .s1{
+            font-size: 2rem;
+            margin-left: 8rem;
+        }
+        .contents .details{
+            font-size: 1.1rem;
+        }
+        .navbar .navlist_active{
+            left: 70%;
+            top: 70%;
+       }
+        
+         
+         }
+         @media screen and (max-width: 400px){
+            .main.right{
+                margin-top: 2rem;
+                margin-left: 0rem;
+                margin-bottom: 2rem;
+                width: 15rem;
+            }
+            .contents .details
+            {
+                font-size: .8rem;
+                line-height: 1.5rem;
+            }
+            .contents h4{
+                font-size: 1rem;
+                margin-left: 3rem;
+            }
+            .intro .typing{
+                margin-left: -.5rem;
+            }
+            .contents h5{
+                font-size: 1rem;
+                margin-left: 4rem;
+            }
+            .contents .emoji{
+                font-size: 1.4rem;
+            }
+            .btn{
+                font-size: .8rem;
+                margin-left: -1rem;
+                padding: .75rem 1rem;
+            }
+            .main .left .icons{
+                flex-direction: row;
+               font-size: 1rem;
+               gap: 1.5rem;
+               margin-top: .4rem;
+           }
+           .main .left{
+            margin-bottom: 3rem;
+            margin-top: -3rem;
+            margin-left: 8rem;
+           }
+        .main.middle{
+            margin-bottom: .5rem;
+        }
+        .name{
+            margin-top: -1rem;
+        }
+        .name .s2{
+            font-size: 1.3rem;
+            margin-left: -.4rem;
+        }
+        .name .s1{
+            font-size: 1.3rem;
+            margin-left: .6rem;
+        }
+        .navbar .logo{
+            font-size: 1.4rem;
+        }
+        .hamburger .line{
+            background-color: black;
+            height: .2rem;
+            width: 2rem;
+            margin: .25rem;
+            border-radius: 1rem;
+        }
+             
+         }
