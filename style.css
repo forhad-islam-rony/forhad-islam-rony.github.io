@@ -203,17 +203,19 @@ body{
     /* background-color: red; */
     display: flex;
     justify-content: space-between;
+    margin-bottom: 2rem;
 }
 .upper .left{
     flex-basis: 35%;
+    margin: auto;
 }
  .upper .left .img{
-    margin-left: 6rem;
+    margin-left: 4rem;
     border-radius: 5%;
     bordertransform: translateY(50px),translateX(50px);
     background-color:transparent;
-    width: 20rem;
-    height: 20rem;
+    width: 21rem;
+    height: 21rem;
     background-image: url(profilepic3.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -221,24 +223,10 @@ body{
     background-position-y: center;
     background-position-x: left;
 }
-/* .upper .left .img::before{
-    content: '';
-    position: absolute;
-    width: 180px;
-    height: 140%;
-    background-color:white;
-    box-shadow: 0 0 20px rgb(8, 8,8);
-    animation: animate 4s linear infinite;
-}
-.upper .right .img::after{
-    content: '';
-    position: absolute;
-    inset: 10px;
-    background-color: rgb(4, 75, 97);
-    border-radius: 16px;
-} */
+
 .upper .right{
    flex-basis: 60%;
+   margin: auto;
 }
 .section-title{
     flex: 0 0 100%;
@@ -249,8 +237,7 @@ body{
     font-size: 40px;
     font-weight: 700;
     position: relative;
-    /* color: #46494D; */
-    color: #605858;
+    color: #c2b5af;
     
 }
 .section-title h2::before{
@@ -260,7 +247,7 @@ body{
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #4F4F4F;
+    background-color: #b3a198;
 }
 .section-title h2::after{
     content: '';
@@ -270,24 +257,326 @@ body{
     top: 100%;
     left: 0;
     margin-top: 8px;
-    background-color: #4F4F4F;
+    background-color: #b3a198;
 }
 
 .upper .right .about-text p{
-    font-size: 16px;
-    line-height: 25px;
-    color: #5a514d;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    /* color: #5a514d; */
+    color: #39424a;
 }
 #markable{
 
     /* background: linear-gradient(120deg, #4da0b0 0%, #8bcbe3 25%, #ffd785 50%, #f58b9b 75%, #9977ae 100%); */
     /* background: linear-gradient(120deg, #2c3e50 0%, #bdc3c7 25%, #ecf0f1 50%, #e74c3c 75%, #8e44ad 100%); */
    
-    background: linear-gradient(120deg, #9a8c98 0%, #cba3cc 25%, #fad8e8 50%, #a7e4e5 75%, #acb6e5 100%);
+    background: linear-gradient(120deg, #dcbdd8 0%, #edceed 25%, #efcddc 50%, #bbe8e9 75%, #868eb5 100%);
 
     background-clip: text;
     color: transparent;
 }
+
+.secondpage .lower{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-between;
+    min-height: 80vh;
+}
+.secondpage .lower .left{
+    /* background-color: green; */
+    flex-basis: 40%;
+    margin: 0 auto;
+}
+.lower .title h2{
+    font-size: 2rem;
+    font-weight: 700;
+    position: relative;
+    color: #c2b5af;
+    margin-left: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.lower .left .info-item{
+    flex: 0 0 50%;
+    max-width: 80%;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+.lower .left .info-item p{
+    font-weight: 600;
+    padding: 10px 0;
+    font-size: 1.3rem;
+    color: #2f3942;
+    border-bottom: 1px solid #465460;
+}
+.lower .left .info-item p span{
+    font-weight: 400;
+    margin-left: 5px;
+    display: inline-block;
+}
+.secondpage .lower .right{
+    flex-basis: 50%;
+    margin: 0 auto;
+}
+
+.title h2::before{
+    content: '';
+    height: 4px;
+    width: 7rem;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #b3a198;
+}
+.title h2::after{
+    content: '';
+    height: 4px;
+    width: 5rem;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 8px;
+    background-color: #b3a198;
+}
+
+.lower .right .qulification-title h2{
+    font-size: 2rem;
+    font-weight: 700;
+    position: relative;
+    color: #c2b5af;
+    margin-bottom: 1.5rem;
+}
+.qulification-title h2::before{
+    content: '';
+    height: 4px;
+    width: 5rem;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #b3a198;
+}
+.qulification-title h2::after{
+    content: '';
+    height: 4px;
+    width: 3rem;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 8px;
+    background-color: #b3a198;
+}
+
+
+.tab-titles{
+    display: flex;
+    margin: 1rem 0 2rem;
+   }
+   .tablink{
+    margin-right: 10rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+   }
+   .tablink::after{
+    content: '';
+    width: 0;
+    height: .2rem;
+    background: #9f3c3c;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: .5s;
+   }
+   .tablink.active::after{
+    width: 50%;
+   }
+   .lower .right .tab-content .skills{
+    flex: 0 0 40%;
+    max-width: 40%;
+    padding-right: 15px;
+    margin-top: 40px;
+}
+
+.padd-15{
+    margin-left: 0rem;
+    margin-right: 15px;
+}
+
+.lower .right .tab-content .skills .skill-item{
+    flex: 0 0 100%;
+    max-width: 100%;
+
+}
+.lower .right .tab-content .skills .skill-item h5{
+    line-height: 40px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #333333;
+    text-transform: capitalize;
+}
+.lower .right .tab-content .skills .skill-item .progress{
+    height: 7px;
+    border-radius: 4px;
+    width: 100%;
+    position: relative;
+    background-color: red;
+
+}
+.lower .right .tab-content .skills .skill-item{
+    margin-bottom: 25px;
+}
+.lower .right .tab-content .skills .skill-item .progress .progress-in{
+    position: relative;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 4px;
+    background-color: #e67474;
+}
+.lower .right .tab-content .skills .skill-item .skill-percent{
+    position: absolute;
+    right: 0;
+    color: #FFFFCC;
+    top: -40px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.tab-content{
+    display: none;
+}
+.tab-content.active{
+    display: block;
+    animation: fadeIn 1s ease;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.tablink{
+    position: relative;
+    padding: 0 10px;
+    background-color: #d4d4dd;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    line-height: 40px;
+    color: #57524f;
+    cursor: pointer;
+    border: 0;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 1rem;
+    transition: .4s;
+}
+
+.tablink:not(:last-child) {
+    margin-right: 15px;
+}
+
+.tablink:hover,
+.tablink.active {
+    background-color: #756e6b;
+    color:#d4d4dd;
+}
+.course{
+    color:  #39424a;
+}
+.institution{
+    color:  #193a56;
+    font-weight: 400;
+}
+.years{
+    color:  #39424a;
+}
+.qulification-content{
+    position: relative;
+    padding: 1rem 2.1rem;
+}
+.qulification-content::after{
+    position: absolute;
+    content: '';
+    height: 7px;
+    width: 7px;
+    left: 8px;
+    top: 25px;
+    transform: rotate(45deg);
+    background-color: rgb(215, 70, 70);
+}
+.qulification-content::before{
+    content: "";
+    height: 70%;
+    width: 3px;
+    left: 10px;
+    position: absolute;
+    background-color: #39424a;
+}
+
+
+.s-content {
+    width: 50%;
+}
+
+.s-heading {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.s-title,
+.s-percentage {
+    color: #5d4848;
+}
+
+.s-progress {
+    display: flex;
+    background-color:  #778fa3;
+    height: 8px;
+    border-radius: 5px;
+}
+
+.progress-bar {
+    width: 0;
+    display: flex;
+    position: relative;
+    transition-delay: 0s;
+    transition-delay: 1.5s;
+    background-color:  #335470;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.tab-content.active .progress-bar {
+    animation: progress 1500ms ease-in 1;
+}
+
+@keyframes progress {
+    from {
+        width: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -378,6 +667,32 @@ body{
         .name .s1{
             font-size: 2.8rem;
         }
+        .secondpage .upper{
+            min-height: 50vh;
+        }
+        .secondpage .upper .left .img{
+            margin-left: 1rem;
+        }
+        .upper .right .about-text p {
+            font-size: 1.2rem;
+            line-height: 1.6rem;
+        }
+        
+.s-heading {
+   font-size: 1.4rem;
+}
+.s-content {
+    width: 70%;
+}
+        
+.institution {
+    color: #193a56;
+    font-weight: 400;
+    font-size: .8rem;
+}
+.email span{
+   font-size: 1rem;
+}
          
          
          }
@@ -390,6 +705,21 @@ body{
             }
             .contents h4{
                 font-size: 1.5rem;
+            }
+            .email span{
+                font-size: .8rem;
+            }
+            .phone span{
+                font-size: 1.1rem;
+            }
+            .upper .right {
+               margin-left: 1rem;
+            }
+            .secondpage .upper {
+              flex-direction: column-reverse;
+            }
+            .upper .left {
+                margin-top: 1rem;
             }
          
          }
@@ -418,18 +748,24 @@ body{
             }
             .contents h4{
                 font-size: 1.5rem;
-                margin-left: 12rem;
+                width: 60%;
+                margin: 0 auto;
+            }
+            .name{
+                width: 80%;
+                margin: 0 auto;
             }
             .contents h5{
                 font-size: 1.25rem;
-                margin-left: 14rem;
+                width: 30%;
+                margin: 0 auto;
             }
             .contents .emoji{
                 font-size: 1.8rem;
             }
             .btn{
                 font-size: 1.2rem;
-                margin-left: 3rem;
+                /* margin-left: 3rem; */
             }
             .main .left .icons{
                 flex-direction: row;
@@ -449,7 +785,6 @@ body{
         }
         .name .s1{
             font-size: 2rem;
-            margin-left: 8rem;
         }
         .contents .details{
             font-size: 1.1rem;
@@ -458,9 +793,14 @@ body{
             left: 70%;
             top: 70%;
        }
-        
-         
+       .upper .right .about-text p {
+        font-size: 1.1rem;
+        line-height: 1.6rem;
+    }
+               
          }
+
+
          @media screen and (max-width: 400px){
             .main.right{
                 margin-top: 2rem;
@@ -480,16 +820,16 @@ body{
             .intro .typing{
                 margin-left: -.5rem;
             }
-            .contents h5{
-                font-size: 1rem;
-                margin-left: 4rem;
+            .contents h5 {
+                font-size: 1.25rem;
+                width: 30%;
+                margin: 0 auto;
             }
             .contents .emoji{
                 font-size: 1.4rem;
             }
             .btn{
                 font-size: .8rem;
-                margin-left: -1rem;
                 padding: .75rem 1rem;
             }
             .main .left .icons{
@@ -497,16 +837,20 @@ body{
                font-size: 1rem;
                gap: 1.5rem;
                margin-top: .4rem;
+               margin-left: -1rem;
            }
            .main .left{
             margin-bottom: 3rem;
             margin-top: -3rem;
             margin-left: 8rem;
            }
-        .main.middle{
+        .main .middle{
             margin-bottom: .5rem;
+               margin-left: 0rem !important;
         }
-        .name{
+        .name {
+            width: 80%;
+            margin: 0 auto;
             margin-top: -1rem;
         }
         .name .s2{
@@ -527,5 +871,42 @@ body{
             margin: .25rem;
             border-radius: 1rem;
         }
-             
+        .upper .right .about-text p {
+            font-size: .8rem;
+            line-height: 1.3rem;
+        }
+        .upper .left .img{
+            width: 18rem;
+            height: 18rem;
+        }
+        
+.secondpage .lower .left {
+    flex-basis: 90%;
+    margin: 0 auto;
+}
+.email span{
+    font-size: .8rem;
+}
+.lower .title h2{
+    font-size: 1.6rem;
+}
+
+.lower .left .info-item p {
+    font-size: 1.1rem;
+}
+.lower .right .qulification-title h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+.s-heading{
+    font-size: 1.2rem;
+}
+.tab-titles {
+    margin: 1rem 0 1rem;
+}
+.tablink{
+    font-size: 1rem;
+}
+
          }
