@@ -7,24 +7,34 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link  href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"/>
     <title>Forhad Islam Rony</title>
 </head>
 <body>
-    <div class="homepage">
-        <div class="navbar">
-            <div class="logo">
-                Portfolio
+    <div class="homepage" id="homepage">
+        <div class="header">
+            <div class="navbar">
+                <div class="logo">
+                    Portfolio
+                </div>
+                <ul class="navlist" id="navlist">
+                    <li><a href="#homepage" class="active">HOME</a></li>
+                    <li><a href="#secondpage">ABOUT</a></li>
+                    <li><a href="#thirdpage">SERVICES</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
             </div>
-            <ul class="navlist" id="navlist">
-                <li><a href="#" class="active">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">PROJECT</a></li>
-                <li><a href="#">CONTACT</a></li>
-            </ul>
-            <div class="hamburger" id="hamburger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
+            <div class="dropdown-menu">
+                <li><a href="#homepage" class="active">HOME</a></li>
+                <li><a href="#secondpage">ABOUT</a></li>
+                <li><a href="#thirdpage">SERVICES</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">CONTACT</a></li>
             </div>
         </div>
         <div class="main">
@@ -38,7 +48,7 @@
                 </div>
             </div>
             <div class="middle">
-                <div class="contents">
+                <div class="contents about-intro">
                     <h5><span class="emoji">&#128075;</span> Hello!</h5>
                             <h1 class="name"><div class="s1">I'm</div><div class="s2">Forhad Islam Rony</div></h1>
                             <h4 class="intro"><div class="s3">And I'm a </div><div class="typing"></div></h4>
@@ -54,7 +64,7 @@
         </div>
     </div>
 
-    <div class="secondpage">
+    <div class="secondpage" id="secondpage">
      <div class="upper">
         <div class="left">
             <div class="img"></div>
@@ -201,6 +211,268 @@
      </div>
     </div>
 
+
+    <!-- ................Third Page........... -->
+  <div class="thirdpage" id="thirdpage">
+    <div class="separated"></div>
+    <div class="title">
+        <h3>What I do ?</h3>
+    </div><br/><br/><br/>
+    <div class="row">
+        <div class="col">
+            <div class="box1">
+                <i class="icon fa-solid fa-mobile-screen-button"></i>
+                <div class="content">
+                    <br/>
+                    <h5>App Development</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias laboriosam amet cum accusantium saepe repellendus! Autem dolorum voluptate eos iste.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="box1">
+                <i class="icon fa-solid fa-desktop"></i>
+                <div class="content">
+                    <br/>
+                    <h5>Web Development</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias laboriosam amet cum accusantium saepe repellendus! Autem dolorum voluptate eos iste.</p>
+                </div>
+            </div>
+        </div>
+       
+        <div class="col">
+            <div class="box1">
+                <i class="icon fa-solid fa-database"></i>
+                <div class="content">
+                    <br/>
+                    <h5>Database</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias laboriosam amet cum accusantium saepe repellendus! Autem dolorum voluptate eos iste.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="separated"></div>
+  </div>
+  </div>
+
+
+
+
+
+
+<!-- ...........Project Section.............. -->
+
+  <div class="project" id="project">
+    <div class="project-title"><h2>My Projects</h2></div>
+    <div class="project-row row1">
+        <div class="project1">
+            <div class="p-img">
+             <img src="ecommerce3.jpg" alt="">
+            </div>
+            <div class="p-details">
+                <div class="content">
+                   <div class="heading">
+                    <h2>E-commerce Application</h2>
+                   </div>
+                   <div class="p-list">
+                    <ul style="list-style: circle;">
+                        <li>Java</li>
+                        <li>Android Framework</li>
+                    </ul>
+                    <ul style="list-style: circle;">
+                        <li>(UI) Design</li>
+                        <li>Firebase</li>
+                    </ul>
+                   </div>
+                </div>
+                <div class="icon">
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-solid fa-eye"></i>
+                </div>
+            </div>
+        </div>
+        <div class="project1">
+            <div class="p-img">
+             <img src="portfolio.png" alt="">
+            </div>
+            <div class="p-details">
+                <div class="content">
+                   <div class="heading">
+                    <h2>Portfolio Website</h2>
+                   </div>
+                   <div class="p-list">
+                    <ul style="list-style: circle;">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                    <ul style="list-style: circle;">
+                        <li>JavaScript</li>
+                        <li>HP</li>
+                    </ul>
+                   </div>
+                </div>
+                <div class="icon">
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-solid fa-eye"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="project-row row2">
+        <div class="project1">
+            <div class="p-img">
+             <img src="security.png" alt="">
+            </div>
+            <div class="p-details">
+                <div class="content">
+                   <div class="heading">
+                    <h2>Security Project</h2>
+                   </div>
+                   <div class="p-list">
+                    <ul style="list-style: circle;">
+                        <li>C++</li>
+                        <li>Console User Interface</li>
+                    </ul>
+                    <ul style="list-style: circle;">
+                        <li>Password Encryption</li>
+                        <li>File Operation</li>
+                    </ul>
+                   </div>
+                </div>
+                <div class="icon">
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-solid fa-eye"></i>
+                </div>
+            </div>
+        </div>
+        <div class="project1">
+            <div class="p-img">
+             <img src="website.png" alt="">
+            </div>
+            <div class="p-details">
+                <div class="content">
+                   <div class="heading">
+                    <h2>Nothing Website</h2>
+                   </div>
+                   <div class="p-list">
+                    <ul style="list-style: circle;">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                    <ul style="list-style: circle;">
+                        <li>Laravel</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                   </div>
+                </div>
+                <div class="icon">
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-solid fa-eye"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+
+
+        
+   <div class="contact" id="contact">
+    <div class="nothing"></div>
+    <div class="contact_container">
+        <div class="contact_data">
+          <h2 class="section_title">
+            <span>Contact Me.</span>
+          </h2>
+          <p class="contact_description1">
+            I will read all emails. Send me any
+            message you want and I'll get back to you.
+          </p>
+          <p class="contact_description2">
+            I need your <b>Name</b> and <b>Email Address</b>, but you won't receive anything other than your reply.
+          </p>
+
+               <div class="contact_social_link">
+                   <a href="#" target="_blank" class="soical_link">
+                    <i class="ri-mail-send-line"></i><span> forhadrony161@gmail.com</spna>
+                   </a>
+                   <a href="#" target="_blank" class="soical_link">
+                    <i class="ri-phone-fill"></i> 01783226830
+                   </a>
+               </div>
+        </div>
+        <div class="contact_mail">
+            <h2 class="contact_title">
+                Send Me A Message
+            </h2>
+            <form action="" class="contact_form">
+                <div class="contact_group">
+                    <div class="contact_box">
+                        <input type="text" name="user_name" class="contact_input" id="name" required placeholder="First Name">
+                        <label for="name" class="contact_label">First Name</label>
+                    </div>
+
+                    <div class="contact_box">
+                        <input type="email" name="user_email" class="contact_input" id="email" required placeholder="Email Address">
+                        <label for="email" class="contact_label">Email Address</label>
+                    </div>
+                </div>
+
+                <div class="contact_box">
+                    <input type="text" name="user_subject" class="contact_input" id="subject" required placeholder="Subject">
+                    <label for="subject" class="contact_label">Subject</label>
+                </div>
+
+                <div class="contact_box contact_area">
+                    <textarea name="user_nessage" id="message"class="contact_input" required placeholder="Message"></textarea>
+                    <label for="message" class="contact_label">Message</label>
+                </div>
+
+                <button type="submit" class="button-85">
+                    <i class="ri-send-plane-line"></i> Send Message
+                </button> 
+            </form>
+        </div>
+        <!-- <div class="contact_social">
+             <img src="arrow.jpg" alt="" class="social_arrow">
+             <div class="contact_social_data">
+                <div>
+                    <p class="contact_social_discription1">
+                        Does not send emails
+                    </p>
+                    <p class="contact_social_discription1">
+                        Write me on my social networks
+                    </p>
+                </div>
+
+                <div class="contact_social_link">
+                    <a href="#" target="_blank" class="soical_link">
+                        <i class="ri-facebook-circle-line"></i>
+                    </a>
+                    <a href="#" target="_blank" class="soical_link">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                    <a href="#" target="_blank" class="soical_link">
+                        <i class="ri-linkedin-box-line"></i>
+                    </a>
+                </div>
+             </div> -->
+        <!-- </div> -->
+    </div>
+   </div>
+
+    <div class="copyright">
+        <div class="name">
+            <h3>Designed & Built by <span>Forhad Islam Rony</span></h3>
+        </div>
+    </div>
+
+
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="javascript.js"></script>
 </body>
