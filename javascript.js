@@ -1,10 +1,16 @@
-const navlist = document.getElementById("navlist");
-const hamburger = document.getElementById("hamburger");
 
-hamburger.addEventListener("click", ()=>{
-     
-    navlist.classList.toggle("navlist_active")
-})
+const toggleBtn = document.querySelector('.hamburger')
+const toggleBtnIcon = document.querySelector('.hamburger i')
+const dropDownMenu = document.querySelector('.dropdown-menu')
+
+toggleBtn.onclick = function(){
+    dropDownMenu.classList.toggle('open')
+    const isOpen = dropDownMenu.classList.contains('open')
+
+    toggleBtnIcon.classList = isOpen
+    ? 'fa-solid fa-xmark'
+    : 'fa-solid fa-bars'
+}
 
 var typed = new Typed(".typing",{
     strings: ["Student","Programmer"],
@@ -30,3 +36,26 @@ resumeHeading.onclick = (event) => {
     correspondingTab.classList.add("active");
   }
 };
+
+
+//Scroll Reveal
+
+const sr = ScrollReveal({
+  reset: true,
+  distance: "60px",
+  duration: 2500,
+  delay: 400,
+});
+
+sr.reveal(".about-intro, .section-title, .contact_data, .left, .title, .logo", {
+  origin: "left",
+});
+sr.reveal(
+  ".tab-titles,.about-text,.row,.portfolio-wrapper,.contact,.contact-form, .row2",
+  {
+    origin: "bottom",
+  }
+);
+sr.reveal(".right, .fa-brands, .row1, .navlist", {
+  origin: "top",
+});
