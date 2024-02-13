@@ -78,22 +78,22 @@ resumeHeading.onclick = (event) => {
 
 //Scroll Reveal
 
-// const sr = ScrollReveal({
-//   reset: true,
-//   distance: "60px",
-//   duration: 2500,
-//   delay: 400,
-// });
+const sr = ScrollReveal({
+  reset: true,
+  distance: "60px",
+  duration: 2500,
+  delay: 400,
+});
 
-// sr.reveal(".about-intro, .section-title, .contact_data, .left, .title, .logo", {
-//   origin: "left",
-// });
-// sr.reveal(
-//   ".tab-titles,.about-text,.row,.portfolio-wrapper,.contact,.contact-form, .row2",
-//   {
-//     origin: "bottom",
-//   }
-// );
-// sr.reveal(".right, .fa-brands, .row1, .navlist", {
-//   origin: "top",
-// });
+sr.reveal(".about-intro, .section-title, .contact_data, .left, .title, .logo", {
+  origin: "left",
+});
+sr.reveal(
+  ".tab-titles,.about-text,.row,.portfolio-wrapper,.contact,.contact-form, .row2",
+  {
+    origin: "bottom",
+  }
+);
+sr.reveal(".right, .fa-brands, .row1, .navlist", {
+  origin: "top",
+});
