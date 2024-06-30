@@ -122,6 +122,7 @@ html{
     gap: 30px;
     color: var(--left-icon);
 }
+
 .main .left .icons a .fa-brands:hover{
     cursor: pointer !important;
     background: var(--left-icon-hover);
@@ -178,22 +179,6 @@ html{
     margin-bottom: 3.125rem;
     color: var(--main-details);
 }
-/* .btn{
-    border: 2px solid #ad9f9f;
-    font-size: 1.25rem;
-    padding: 12px 20px;
-    border-radius: 8px;
-    background: transparent;
-    transition: .5s ease;
-    cursor: pointer;
-    justify-content: center;
-    align-items: center;
-    color: #938686;
-}
-.btn:hover{
-    background:#817d7d;
-    color: #384348;
-} */
 .main .right{
     aspect-ratio: 1;
     border-radius: 50%;
@@ -260,19 +245,21 @@ html{
     flex-basis: 35%;
     margin: auto;
 }
- .upper .left .img{
+.upper .left .img{
     margin-left: 4rem;
     border-radius: 5%;
     bordertransform: translateY(50px),translateX(50px);
     background-color:transparent;
     width: 21rem;
     height: 21rem;
-    background-image: url(profilepic3.jpg);
+    background: var(--project);
+    /* background-image: url(profilepic3.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    */
     background-position-y: center;
-    background-position-x: left;
+    background-position-x: left; 
     position: relative;
     overflow: hidden;
     display: flex;
@@ -281,6 +268,34 @@ html{
 
 }
 
+.upper .left .img::before{
+    content: '';
+    position: absolute;
+    width: 15rem;
+    height: 140%;
+    background: linear-gradient(var(--mark5), var(--mark4));
+    animation: rotate 4s linear infinite;
+}
+
+.upper .left .img::after{
+    content: '';
+    position: absolute;
+    background-image: url(profilepic3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5%;
+    inset: 5px;
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
 .upper .right{
    flex-basis: 60%;
    margin: auto;
@@ -328,7 +343,7 @@ html{
     /* background: linear-gradient(120deg, #4da0b0 0%, #8bcbe3 25%, #ffd785 50%, #f58b9b 75%, #9977ae 100%); */
     /* background: linear-gradient(120deg, #2c3e50 0%, #bdc3c7 25%, #ecf0f1 50%, #e74c3c 75%, #8e44ad 100%); */
    
-    background: linear-gradient(120deg, #dcbdd8 0%, #edceed 25%, #efcddc 50%, #bbe8e9 75%, #868eb5 100%);
+    background: linear-gradient(120deg, var(--mark1) 0%, var(--mark2) 25%, var(--mark3)  50%, var(--mark4) 75%, var(--mark5) 100%);
 
     background-clip: text;
     color: transparent;
@@ -734,7 +749,7 @@ html{
 }
 .project1{
     width: 30%;
-    height: 20rem;
+    height: 22rem;
     background-color: var(--project);
     position: relative;
     border-radius: 10px;
@@ -1127,6 +1142,33 @@ body.dark{
     
 }
 
+.scrollTop{
+    background: var(--root-color);
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 32px;
+    color: var(--main-details);
+   text-decoration: none;
+   opacity: 0;
+   transition: all .5s;
+   pointer-events: none;
+   z-index: 5;
+
+}
+
+.scrollTop.active{
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}
+
 /* .dot{
     width: 10px;
     height: 10px;
@@ -1167,6 +1209,13 @@ body.dark{
             {
                 font-size: 1.3rem;
                 line-height: 1.7rem;
+
+            }
+            .name .s1{
+                font-size: 2.5rem;
+            }
+            .name .s2{
+                font-size: 2.5rem;
             }
             .contents h4{
                 font-size: 2.2rem;
@@ -1196,6 +1245,14 @@ body.dark{
         .upper .right .about-text p{
             font-size: 1.3rem;
             line-height: 1.6rem;
+        }
+        .project-row{
+
+            gap:5rem;
+        }
+        .project1{
+           width: 80%;
+           height: 20rem;
         }
     
          }
@@ -1230,10 +1287,10 @@ body.dark{
             margin-bottom: 1rem;
         }
         .name .s2{
-            font-size: 2.9rem;
+            font-size: 2.5rem;
         }
         .name .s1{
-            font-size: 2.8rem;
+            font-size: 2.5rem;
         }
         .secondpage .upper{
             min-height: 50vh;
@@ -1261,6 +1318,13 @@ body.dark{
 .email span{
    font-size: 1rem;
 }
+.project-row{
+    gap:5rem;
+}
+.project1{
+   width: 100%;
+   height: 21rem;
+}
          
          
          }
@@ -1272,10 +1336,10 @@ body.dark{
                 font-size: .8rem;
             }
             .name .s2{
-                font-size: 2.5rem;
+                font-size: 2rem;
             }
             .name .s1{
-                font-size: 2.5rem;
+                font-size: 2rem;
             }
             .contents h4{
                 font-size: 1.5rem;
@@ -1306,9 +1370,12 @@ body.dark{
             .contact_mail{
                 width: 60%;
             }
-            .project1 {
-                width: 50%;
-                height: 22rem;
+            .project-row{
+                gap:5rem;
+            }
+            .project1{
+               width: 100%;
+               height: 22rem;
             }
          
          }
@@ -1318,6 +1385,7 @@ body.dark{
             }
             .dropdown-menu{
                 display: block;
+                z-index: 2;
             }
             .navbar .hamburger{
                 display: block;
@@ -1395,12 +1463,20 @@ body.dark{
     .project{
         margin-bottom: 5rem;
     }
+    .project-row{
+        gap:3rem;
+    }
+    .project1{
+       width: 100%;
+       height: 25rem;
+    }
     .contact_box{
         width: 80%;
     }
     .box1{
         width: 100%;
     }
+
                
          }
          @media  screen and (max-width: 600px) {
@@ -1528,7 +1604,11 @@ body.dark{
     flex-direction: column;
 }
 .project1{
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
+    height: 20rem;
+    margin-top: 0rem;
+    
 }
 .project-title h2 {
     margin-left: 5%;
@@ -1546,6 +1626,10 @@ body.dark{
 .name h3{
     font-size: 1rem;
 }
+.project .project-row{
+    gap: 5rem;
+}
+
          }
 
 

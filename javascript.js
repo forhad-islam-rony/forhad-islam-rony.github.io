@@ -37,6 +37,17 @@ resumeHeading.onclick = (event) => {
   }
 };
 
+const toTop = document.querySelector(".scrollTop");
+
+window.addEventListener("scroll", ()=> {
+  if(window.pageYOffset >100){
+    toTop.classList.add("active");
+  }
+  else{
+    toTop.classList.remove("active");
+  }
+})
+
 
 // const dots=[];
 // const cursor = {
@@ -85,11 +96,11 @@ const sr = ScrollReveal({
   delay: 400,
 });
 
-sr.reveal(".about-intro, .section-title, .contact_data, .left, .title, .logo", {
+sr.reveal(".about-intro, .section-title, .contact_data, .left, .title, .logo, .row2", {
   origin: "left",
 });
 sr.reveal(
-  ".tab-titles,.about-text,.row,.portfolio-wrapper,.contact,.contact-form, .row2",
+  ".tab-titles,.about-text,.row,.portfolio-wrapper,.contact,.contact-form",
   {
     origin: "bottom",
   }
